@@ -7,7 +7,6 @@ export default () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const searchApi = async (searchTerm) => {
-    console.log("hi there");
     try {
       const response = await yelp.get("/search", {
         // adding an object with the property params in axios causes any key value pairs to appear in the query string
